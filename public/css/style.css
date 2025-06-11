@@ -1,21 +1,24 @@
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: url('background-img.jpg') no-repeat center center/cover;
+.background-img {
+    background-image: url('images/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
+
 .quote-container {
-    background: rgba(255, 255, 255, 0.8); /* Light transparent background */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: none; 
     text-align: center;
+    padding: 20px;
     max-width: 600px;
     position: relative;
+    z-index: 10;
 }
 
 .quote-text {
