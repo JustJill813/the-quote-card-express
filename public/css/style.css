@@ -1,34 +1,36 @@
-body {
-    margin: 0;
-    font-family: "Georgia", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+.background-img {
+    background-image: url('.../img/rainbow.jpg'); 
+    border: 2px solid red; 
+    background-size: cover; 
+    background-position: center; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-repeat: no-repeat; 
+    z-index: -1;
 }
 
 .quote-container {
-    background: none; 
-    text-align: center;
-    padding: 20px;
-    max-width: 600px;
-    position: relative;
-    z-index: 10;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .quote-text {
     font-size: 2em;
     font-weight: bold;
-    color: #fff;
+    color: black;
     margin: 10px 0;
 }
 
 .author-text {
     font-size: 1em;
     font-weight: normal;
-    color: #fff;
+    color: black;
     margin-top: 10px;
 }
 
