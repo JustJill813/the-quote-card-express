@@ -1,6 +1,6 @@
 .background-img {
-    background-image: url('.../img/rainbow.jpg'); 
-    border: 2px solid red; 
+    position: absolute;
+    background-image: url('../img/rainbow.jpg'); 
     background-size: cover; 
     background-position: center; 
     top: 0; 
@@ -12,42 +12,48 @@
 }
 
 .quote-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    z-index: 10;
 }
 
 .quote-text {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: bold;
-    color: black;
-    margin: 10px 0;
+    color: white;
+    text-align: center;
+    max-width: 70%;
+    line-height: 1.4;
 }
 
 .author-text {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: normal;
-    color: black;
-    margin-top: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
 }
 
 .quote-container::before {
     content: open-quote;
-    font-size: 3em;
+    font-size: 5em;
     color: #fff;
     position: absolute;
-    top: -10px;
-    left: -10px;
+    top: -50px;
+    left: -50px;
 }
 
 .quote-container::after {
     content: close-quote;
-    font-size: 3em;
+    font-size: 5em;
     color: #fff;
     position: absolute;
-    bottom: -10px;
-    right: -10px;
+    bottom: -50px;
+    right: -50px;
 }
