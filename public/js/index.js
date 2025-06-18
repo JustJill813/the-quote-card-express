@@ -5,7 +5,7 @@ const elements = {
     author: document.getElementById("author"),
 };
 
-async function getRandomImage() {
+/* async function getRandomImage() {
     const client_id = "kPegUbPEAJqDqU2384yEUcT3OSIGa89mExA7p49wztg";
     const endpoint = `https://api.unsplash.com/photos/random/?client_id=${client_id}`;
     try {
@@ -18,7 +18,7 @@ async function getRandomImage() {
     } catch (error) {
         console.error(error);
     }
-}
+} */
 
 getRandomImage();
 
