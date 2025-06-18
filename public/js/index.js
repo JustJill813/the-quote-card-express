@@ -10,7 +10,7 @@ async function getRandomImage() {
     try {
       const response = await fetch(endpoint);
         const returnedData = await response.json();
-        const receivedPhotoUrl = returnedData.urls.regular;
+        const receivedPhotoUrl = returnedData.data;
 
         const imgDiv = document.querySelector(".background-img");
         imgDiv.style.backgroundImage = `url("${receivedPhotoUrl}")`;
